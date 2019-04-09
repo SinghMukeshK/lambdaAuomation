@@ -26,7 +26,18 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm install
+      - run: 
+          name: Install serverless and deploy 
+          command: |
+            npm install
+            npm config set unsafe-perm true
+            npm install -g serverless
+            serverless --version
+
+      - run: 
+          name: Deploy Lambda function
+          command: serverless deploy list
+
 
       - save_cache:
           paths:
