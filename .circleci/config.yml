@@ -30,7 +30,7 @@ jobs:
           name: Install serverless and deploy 
           command: |
             npm install
-            npm config set unsafe-perm true
+            #npm config set unsafe-perm true
             npm install -g serverless
             serverless --version
 
