@@ -39,6 +39,8 @@ jobs:
             # serverless --version
             #ls
             git --version
+            git config --global user.email "mukesh06081990@gmail.com"
+            git config --global user.name "SinghMukeshK"
             git commit -am 'Version auto updated by CircleCi'
             git push origin master
             #cat package.json
