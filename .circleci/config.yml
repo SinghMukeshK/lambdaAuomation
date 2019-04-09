@@ -34,13 +34,14 @@ jobs:
             npm config set prefix '~/.npm-global'
             export PATH=~/.npm-global/bin:$PATH
             source ~/.profile
-            #npm config set unsafe-perm true
+            npm config set unsafe-perm true
             npm install -g serverless
             serverless --version
+            serverless deploy list
 
-      - run: 
-          name: Deploy Lambda function
-          command: serverless deploy list
+      # - run: 
+      #     name: Deploy Lambda function
+      #     command: serverless deploy list
 
 
       - save_cache:
