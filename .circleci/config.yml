@@ -39,6 +39,8 @@ jobs:
             # serverless --version
             #ls
             git --version
+            git commit -am 'Version auto updated by CircleCi'
+            git push origin master
             #cat package.json
            # sed -i -e "s/.*Version.*/\"Version\": \"2"\"/" package.json
             # echo $AWS_ACCESS_KEY_ID
