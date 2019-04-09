@@ -1,0 +1,19 @@
+{
+  "name": "lambda-automation",
+  "version": "1.0.0",
+  "description": "Automation of lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SinghMukeshK/lambdaAuomation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SinghMukeshK/lambdaAuomation/issues"
+  },
+  "homepage": "https://github.com/SinghMukeshK/lambdaAuomation#readme"
+}
