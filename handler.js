@@ -1,4 +1,4 @@
-module.exports.sayHello = (event, context, callback) => {
+module.exports.sayHello = async (event, context) => {
     return {
         statusCode: 200,
         body: JSON.stringify({

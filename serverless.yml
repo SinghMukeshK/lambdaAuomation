@@ -1,11 +1,12 @@
 service: 
-  name: lambda-automation-test
+  name: lambda-automation-testing
 
 provider:
   name: aws
   runtime: nodejs8.10
   region: ap-southeast-1
   role: arn:aws:iam::035257659693:role/serverless_agent_lambda_role
+  deploymentPrefix: prefix
 
 functions:
   helloFunction:
