@@ -38,6 +38,7 @@ jobs:
             # npm install -g serverless
             # serverless --version
             #ls
+            sed -i '/version/c\ \"version"\ : \"3.0.0\",' package.json
             git --version
             git config --global user.email "mukesh06081990@gmail.com"
             git config --global user.name "SinghMukeshK"
